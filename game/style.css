@@ -33,13 +33,16 @@ button:hover {
 }
 
 .mission {
-  margin: 40px auto 0 auto; /* 꼭 이렇게 작성! */
+  position: absolute;           /* 기준은 body로 잡혀있음 */
+  left: 50%;                    /* 왼쪽에서 50% 위치 */
+  top: 60%;                     /* 위에서 60% 위치 (너무 높으면 50%로 조절 가능) */
+  transform: translate(-50%, -50%); /* 정확한 가운데 정렬 */
+  
   font-size: 1.5em;
   color: #333;
   padding: 20px;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  display: block;  /* inline-block이면 auto가 적용되지 않음! */
   max-width: 600px;
 }
