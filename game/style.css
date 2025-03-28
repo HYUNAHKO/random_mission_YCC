@@ -33,13 +33,14 @@ button:hover {
 }
 
 .mission {
-  margin-top: 40px;
+  margin: 40px auto 0 auto;   /* 위 여백 + 가운데 정렬 */
   font-size: 1.5em;
   color: #333;
   padding: 20px;
   border-radius: 12px;
   background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  display: inline-block;
+  display: block;             /* block으로 바꿔야 margin auto 작동해 */
   max-width: 600px;
 }
+
